@@ -1,0 +1,30 @@
+const utils = require('./utils')
+
+utils.generateUserList = [1, 2, 3]
+utils.getUserNames = []
+
+const user = [
+  {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 20
+  },
+  {
+      firstName: 'Jane',
+      lastName: 'Doe',
+      age: 16
+  },
+  {
+    firstName: 'Jeremy',
+    lastName: 'Doe',
+    age: 8
+},
+{
+    firstName: 'Jack',
+    lastName: 'Doe',
+    age: 22
+}
+];
+
+console.log(utils.generateUserList(user))
+console.log(utils.getUserNames(user))

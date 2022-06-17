@@ -1,0 +1,20 @@
+{
+  "name": "gyakorlofeladat-module-system-danielwine",
+  "version": "1.0.0",
+  "description": "Gyakorlófeladat - Module System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/FullStackAPI-Tr360-2022/gyakorlofeladat-module-system-danielwine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullStackAPI-Tr360-2022/gyakorlofeladat-module-system-danielwine/issues"
+  },
+  "homepage": "https://github.com/FullStackAPI-Tr360-2022/gyakorlofeladat-module-system-danielwine#readme"
+}
