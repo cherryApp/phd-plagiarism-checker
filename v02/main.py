@@ -1,3 +1,4 @@
+# init: pip install -r requirements.txt
 import os
 from numpy import vectorize 
 from sklearn.feature_extraction.text import TfidfVectorizer
