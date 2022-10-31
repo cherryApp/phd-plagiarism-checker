@@ -1,14 +1,25 @@
 # init: pip install -r requirements.txt
+# example: python code-comparer.py --dirs gyakorlofeladat-module-system-* --files /**/*.js
+# example2: python code-comparer.py -d gyakorlofeladat-module-system-* -f /**/*.js
+import sys
+import getopt
+import argparse
 import glob
 import os
 from numpy import vectorize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-repos = glob.glob('gyakorlofeladat-module-system-*')
+# Parse arguments
+parser = argparse.ArgumentParser()
+parser.add_argument('-d', '--dirs', default='gyakorlofeladat-module-system-*')
+parser.add_argument('-f', '--files', default='/**/*.js')
+args = parser.parse_args()
+
+repos = glob.glob(args.dirs)
 
 def get_contents(parent_dir=''):
-    files = glob.glob(parent_dir + '/**/*.js', recursive=True)
+    files = glob.glob(parent_dir + args.files, recursive=True)
     return '\n'.join([open(File).read() for File in files])
 
 sample_contents = [get_contents(repo) for repo in repos]
